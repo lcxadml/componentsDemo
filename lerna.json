@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useWorkspaces": true,
+  "version": "independent",
+  "npmClient": "yarn",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "ignoreChanges": [
+    "ignored-file",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org",
+      "version": {
+        "conventionalCommits": true,
+        "message": "chore(release): publish"
+      }
+    }
+  }
+}

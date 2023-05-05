@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "ignoreChanges": [
+    "ignored-file",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
+  "devDependencies": {
+    "lerna": "^6.6.1",
+    "lint-staged": "^13.2.2",
+    "yorkie": "^2.0.0"
+  }
+}
